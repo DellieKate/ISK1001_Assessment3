@@ -1,27 +1,26 @@
 # **Feedback Log**
 
-This markdown file serves as a feedback log for the KLM LabTest Advisor project for the ISK1001 Assessment 3. The rubric requires that each group illustrate documentation and tracking of both recieved and offered feedback. Here you will find our repository of our groups feedback.
+## **1. Purpose of this Document**
+This document tracks all feedback given to and received from peer groups throughout the development of the KLM LabTest Advisor project. Its purpose is to provide a transparent and comprehensive record of our collaborative review process, ensuring our final documentation is clear, useful, and professionally robust.
+
+
+## **2. Scope of Feedback**
+
+Our feedback process is guided by two core principles, directly aligned with the assessment rubric:
+
+#### **Pillar 1: General Documentation Quality & Usefulness:**
+- This focuses on the practical utility of the documentation. Feedback in this category addresses whether the documentation provides a new developer or user with all the necessary information to understand, install, and run the application effectively.
+
+#### **Pillar 2: Ethical & Security Considerations:**
+- This focuses on professional responsibility. Feedback in this category addresses whether the project has adequately identified and considered the potential risks, ethical implications, and security vulnerabilities associated with its design and data handling.
 
 ----
-
-Our approach to feedback management follows a two-prong approach:
-
-#### **Pillar 1: General Documentation Quality & Usefulness**
-- Core task(s): creating "appropriate documentation... for a user to utilise the features of the application."
-- The feedback here should answer the question: "As a new developer joining your project, does your documentation give me everything I need to understand and run your code?"
-- We want to be able to say, “Yes it does.”
-
-#### **Pillar 2: Ethical & Security Considerations**
-- This is the specific, industry-relevant part that shows a deeper level of professional thinking.
-- The feedback here answers the question: "Have we considered the professional responsibilities and risks associated with the application?"
-
-----
-### **Running log of recieved feedback**
+## **3. Running log of recieved feedback**
 **[date: title of log]**
 - Here we will store a running list of recieved feedback.
 ----
 
-
+## **4. Log of provided feedback**
 ### **Feed Back Session 1: [date]**
 - create separate section for internal or recieving feedback
 ----
