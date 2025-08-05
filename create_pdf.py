@@ -1,6 +1,26 @@
+"""
+create_pdf.py - PDF Report generator
+
+This module is responsible for generating a PDF file which contains the patient's details and all their recommended lab tests.
+
+Import
+------
+- FPDF from fpdf : library that is used to create PDF documents.
+- Patient from entities : The Patient class that holds all relevant patient information.
+
+Parameters
+----------
+- patient : Patient
+    An instance of the Patient class, which contains patient's details and lab tests.
+    
+Output
+------
+- 'Patient_File.pdf' file will be created and saved in the current directory.
+- Appropriate layout of the file was also created (Tabular form showing patient name, birthday, sex, lab tests, description, left-aligned).
+"""
+
 from fpdf import FPDF
 from entities import Patient
-
 
 def print(patient):
     pdf = FPDF()

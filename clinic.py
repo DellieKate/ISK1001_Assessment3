@@ -1,11 +1,32 @@
-# Main page
+"""
+clinic.py - This is the main entry point for the application.
+
+It launches the application and directs user to the appropriate module once they have selected their role.
+
+Imported Modules
+----------------
+- Reception (reception.py)
+    Manages patient registration and other reception-related tasks.
+- Doctor (doctor.py)
+    Accesses patients' records, lab test results and generates appropriate PDF reports.
+
+Variables
+---------
+patient_list : list
+    It contains the list of Patient objects that is shared by both reception and doctor modules.
+    
+Errors
+------
+- The script also raises ValueError if the user provided a wrong input (input should be an integer value between 1 and 3 only).
+"""
+
+
 from reception import reception_main_menu
 from doctor import doctor_main_menu
 
-# Define an empty patient list to start with
+#Main page
 patient_list = []
 
-# Starting with a user = 0 since no input yet from the user
 user = 0
 
 while True:
