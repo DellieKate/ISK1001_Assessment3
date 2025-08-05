@@ -78,7 +78,7 @@ Below is a condensed table of third party modules, their licenses, and the versi
 
 * [Canvas](https://edstem.org/au/courses/23675/lessons)
 
-* [Phyton](https://www.python.org/)
+* [Python](https://www.python.org/)
 
 * [Make a README](https://www.makeareadme.com/)
 
