@@ -29,7 +29,7 @@ The app's main feature is the automation of recommending pathology tests.  To ac
 
 ## Installation
 
-Below is a quick quick installation guide for WSL/Linux users.  For a more comprehensive installation guide, see: [Installation Guide](INSTALLATION.md).
+Below is a quick quick installation guide for WSL/Linux users.  For a more comprehensive installation guide, see: [Installation Guide](README_Files/INSTALLATION.md).
 
 `user@user-desktop:~$ git clone git@github.com:DellieKate/KateClinicPython.git` *Clone repo locally*  
 
@@ -41,7 +41,7 @@ Below is a quick quick installation guide for WSL/Linux users.  For a more compr
 
 ## Usage
 
-Below is a brief summary of instructions on how to use the app.  For more detailed instructions, see: [Instruction Guide](INSTRUCTIONS.md)
+Below is a brief summary of instructions on how to use the app.  For more detailed instructions, see: [Instruction Guide](README_Files/INSTRUCTIONS.md)
 
 1. Run project in terminal. 
 ```

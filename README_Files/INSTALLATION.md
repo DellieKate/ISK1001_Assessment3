@@ -76,4 +76,4 @@ To open a specific file:
 Code <file_name_here.py>
 ```  
   
-For instructions on how to use the app, refer to the [README](README.md) for a brief summary, or the [Instruction Guide](INSTRUCTIONS.md) for a more detailed guide.
+For instructions on how to use the app, refer to the [README](../README.md) for a brief summary, or the [Instruction Guide](INSTRUCTIONS.md) for a more detailed guide.

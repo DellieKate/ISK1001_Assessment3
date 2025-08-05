@@ -1,7 +1,7 @@
 <!-- Instruction Steps -->
 # Usage/Instructions
 
-Here you will find an in depth guide on how to navigate and use the <u>**KLM LabTest Advisor**</u>.  For the brief summary, head to [README](README.md).
+Here you will find an in depth guide on how to navigate and use the <u>**KLM LabTest Advisor**</u>.  For the brief summary, head to [README](../README.md).
 
 To utilise this app, you must have covered the installation steps prior.
 
