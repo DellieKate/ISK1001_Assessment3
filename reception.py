@@ -1,3 +1,27 @@
+"""
+reception.py - This is the reception module of the application
+
+This module contains the functions for new patient registration and patient data export to a CSV file.
+
+Imports
+-------
+- Patient (entities): The Class representing a patient.
+- numpy as np: It is used to generate random patient IDs.
+- parse (dateutil.parser): It is a powerful function that converts strings into datetime objects, automatically detecting the format.
+- csv: It is used to write patient data into a .csv file.
+
+Functions
+---------
+- reception_main_menu(patient_list = []):
+    Main menu or interface where user (receptionist) can add new patients or export patient records.
+
+- add_patient(patient_list):
+    A function that allows the user to create a new Patient object by entering validated input data. It also generates a unique ID for each patient.
+
+- master_list (patient_list = []):
+    It adds new patient object to the current master list.
+"""
+
 from entities import Patient
 import numpy as np
 from dateutil.parser import parse
@@ -5,7 +29,21 @@ import csv
 
 # Call function(options) to main menu  
 def reception_main_menu(patient_list = []):
-    """Main menu where user can input the necessary details of the patient"""
+    """
+    Launches the main menu for reception staff.
+    
+    Parameters
+    ----------
+    patient_list : list
+        The list of Patient objects shared with the main system.
+        
+    Options 
+    -------
+    1 = Add a new patient
+    2 = Export patient list to CSV file
+    3 = Exit menu
+    """
+    
     print(f'\n--Welcome to Reception: Main Files--\n')
     option = 0
     while (option <= 4):
@@ -31,6 +69,22 @@ def reception_main_menu(patient_list = []):
  
 # Add new patient
 def add_patient(patient_list):
+    """
+    Prompts the user (receptionist) to input new patient's details and adds them to the patient_list.
+    
+    Features
+    --------
+    - validates first and last names
+    - checks and parses birth date format
+    - generates unique patient ID
+    - confirms sex of patient (Male or Female)
+    
+    Parameters
+    ----------
+    patient_list : list
+        The list where the new Patient will be added. 
+    """
+
     correct_input = False
     while correct_input != True:
         # First name
@@ -82,7 +136,16 @@ def add_patient(patient_list):
                 
  #Write CSV file   
 def master_list (patient_list = []):
-    with open('patient_master_list.csv', 'w') as f:
+    """
+    Current patient list will be exported to a CSV file and named patient_master_list.csv.
+    
+    Parameters
+    ----------
+    - patient_list : list
+        The list of Patient objects to be written to the file.
+    """
+    
+    with open('patient_master_list.csv', 'w') as f: # w means write into the file
         writer = csv.writer(f)
         writer.writerow(['ID', 'Full Name', 'Birthday', 'Sex'])
         writer.writerows(map(lambda patient: [patient.id, patient.full_name, patient.birthday, patient.sex], patient_list))
