@@ -3,7 +3,7 @@
 
 Here you will find an in depth guide on how to navigate and use the <u>**KLM LabTest Advisor**</u>.  For the brief summary, head to [README](../README.md).
 
-To utilise this app, you must have covered the installation steps prior.
+To use this app, first complete the installation process outlined in the [Installation Guide](README.md/INSTALLATION.md)
 
 Once installation is complete, to run the app, enter from the terminal, while within the app directory, this command:
 
