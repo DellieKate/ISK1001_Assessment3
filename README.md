@@ -98,3 +98,5 @@ Below is a condensed table of third party modules, their licenses, and the versi
 * [Make a README](https://www.makeareadme.com/)
 
 * [readmine](https://github.com/mhucka/readmine?tab=readme-ov-file#getting-help)
+
+* [APP(Quick Reference)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference)
