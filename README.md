@@ -12,6 +12,7 @@
 ▶ [About](#about)
 ▶ [Installation](#installation)
 ▶ [Usage](#usage)
+▶ [Ethical & Security-based](#ethical--security-based)
 ▶ [Licenses](#licenses)
 ▶ [Acknowledgements](#acknowledgements)
 
