@@ -25,6 +25,25 @@ Our feedback process is guided by two core principles, directly aligned with the
 - create separate section for internal or recieving feedback
 ----
 
+### **Entry #1: Internal Security & Documentation Review** [04/09/2025]
+Contributers and reviewers: Dylan Esteban, Kate Mendoza, George Vasiliadis
+
+#### Findings:
+As this application handles sensitive patient data, we conducted an internal audit of the application's codebase to identify potential security vulnerabilities and ethical concerns. In doing so, we have identified several key ethical and security considerations based principally on the Australian Privacy Principles (APPs):
+
+1. Data Security: The current version exports patient data to an unencrypted CSV file, posing a risk if the file is accessed by unauthorised users (violates APP 11).
+2. Access Control: The application lacks a login system, meaning there is no way to verify if a user is an authorised doctor or receptionist.
+3. Data Integrity: There is currently no feature to edit or correct a patient's details, which could lead to incorrect medical recommendations if a mistake is made during data entry (violates APP 10).
+4. Lack of Consent Mechanism (APP 3, APP 5): There is currently no process for confirming patient consent prior to data entry. A prompt for user verification and consent is recommended.
+
+To view view our analysis of these considerations with respect to industry standard legal and ethical frameworks, as well as our remediation strategies and action items, please refer to the [ETHICS_SECURITY.md](ETHICS_SECURITY.md)
+
+
+
+
+
+
+
 #### **Giving Feedback 1 Checklist: Group x [name 1, 2, 3]:**
 ----
 ##### **README Review**
