@@ -21,9 +21,6 @@ Our feedback process is guided by two core principles, directly aligned with the
 ----
 
 ## **4. Log of provided feedback**
-### **Feed Back Session 1: [date]**
-- create separate section for internal or recieving feedback
-----
 
 ### **Entry #1: Internal Security & Documentation Review** [04/09/2025]
 Contributers and reviewers: Dylan Esteban, Kate Mendoza, George Vasiliadis
@@ -37,6 +34,36 @@ As this application handles sensitive patient data, we conducted an internal aud
 4. Lack of Consent Mechanism (APP 3, APP 5): There is currently no process for confirming patient consent prior to data entry. A prompt for user verification and consent is recommended.
 
 To view view our analysis of these considerations with respect to industry standard legal and ethical frameworks, as well as our remediation strategies and action items, please refer to the [ETHICS_SECURITY.md](ETHICS_SECURITY.md)
+
+Keep in markdown:
+
+### Entry #2: Feedback Given
+
+- **The specific documentation checked:**
+  `README.md`, `INSTALLATION.md`, `USAGE.md` (Instruction Guide), and Class/Function usage documentation.
+
+- **When it was checked:**
+  2025-08-06
+
+- **Who checked it:**
+  George (from Team: Kate, Dylan, and George)
+
+- **Any feedback provided:**
+  1. The README, Installation, and Usage files are all structured well, with a logical flow that makes it easier to understand, especially for beginners. The way it’s put together makes it easy to grasp concepts and standards without being overwhelming.
+  2. Mentioning using Command Prompt (CMD), not PowerShell, in the Installation Guide is a helpful detail for beginners who might confuse the two.
+  3. In the installation steps, the `git clone` command is used, but some users might not know they need to have Git installed first. It could be worth mentioning Git in the System Requirements.
+  4. Consider adding very basic/brief installation and usage instructions directly in the main README for quick reference, in addition to linking to the detailed guides.
+  5. The examples given are succinct and easy to understand, especially the example for the `scores(hand)` class method.
+  6. Consider adding more examples in the 'Class and Function Usage' documentation, particularly showing how classes and functions interact with each other to help visualise data flow.
+
+- **Any actions to do based on the feedback provided:**
+  1. Add a note in `INSTALLATION.md` clarifying the use of Command Prompt (CMD) instead of PowerShell for Windows users.
+  2. Update the System Requirements section to mention that Git must be installed before running `git clone`.
+  3. Add a short, basic installation and usage summary to the main `README.md` for quick reference.
+  4. Review the 'Class and Function Usage' documentation and consider adding more examples showing interaction between classes and functions.
+
+
+
 
 
 
