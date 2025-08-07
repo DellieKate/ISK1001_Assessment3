@@ -35,7 +35,6 @@ As this application handles sensitive patient data, we conducted an internal aud
 
 To view view our analysis of these considerations with respect to industry standard legal and ethical frameworks, as well as our remediation strategies and action items, please refer to the [ETHICS_SECURITY.md](ETHICS_SECURITY.md)
 
-Keep in markdown:
 
 ### Entry #2: Feedback Given
 
@@ -46,7 +45,7 @@ Keep in markdown:
   2025-08-06
 
 - **Who checked it:**
-  George (from Team: Kate, Dylan, and George)
+  George Vasiliadis (from Team: Kate, Dylan, and George)
 
 - **Any feedback provided:**
   1. The README, Installation, and Usage files are all structured well, with a logical flow that makes it easier to understand, especially for beginners. The way it’s put together makes it easy to grasp concepts and standards without being overwhelming.
@@ -61,6 +60,30 @@ Keep in markdown:
   2. Update the System Requirements section to mention that Git must be installed before running `git clone`.
   3. Add a short, basic installation and usage summary to the main `README.md` for quick reference.
   4. Review the 'Class and Function Usage' documentation and consider adding more examples showing interaction between classes and functions.
+
+
+  ### Entry #3: Feedback Received – Lack of Consent Mechanism
+
+  - **The specific documentation checked:**
+    `reception.py` (patient data entry workflow) and overall application data collection process.
+
+  - **When it was checked:**
+    2025-08-06
+
+  - **Who checked it:**
+    Ahmed Karakaci (external reviewer)
+
+  - **Any feedback provided:**
+    "There’s no step in the app to confirm that the patient has given consent before their personal and health information is entered. This could be a legal and ethical issue under privacy laws. A small fix would be to add a prompt to confirm consent before saving the record. I am not familiar with Australian privacy laws, so cannot make recommendations but they should be easy to find. Cross reference them with laws and frameworks that deal with the collection of senstitive personal data, of which, medical records and biographical details will among them."
+
+  - **Any actions to do based on the feedback provided:**
+    1. Create a **consent confirmation prompt** in the `add_patient` function of `reception.py` that requires the user to confirm the patient has been informed and has agreed to data collection.
+    2. Prevent record creation if consent is not confirmed.
+    3. Update `INSTRUCTIONS.md` and `README.md` to document the new consent step.
+    4. Add inline code comments explaining the legal basis (if necessary APP 3 and APP 5).
+    5. Link to the full analysis in `ETHICAL_SECURITY.md` for detailed legal and technical reasoning.
+
+
 
 
 
