@@ -36,16 +36,16 @@ def doctor_main_menu(patient_list = []):
     """
     
     print(f'\nWelcome to Doctor\'s Files.')
-    option = 0
+    option = 0      #Starts with 0, no input yet
     while (option <= 4):
         print(f'\nPlease choose an option:\n 1 = Search patient \n 2 = Exit\n')
         option = int(input('Option: '))
         match option:
             case 1:
-                pID = input('Input patient ID: ' ).strip()
+                pID = input('Input patient ID: ' ).strip()  #Removes trailing and leading spaces
                 patient = find_patient_by_id(patient_list, pID)
                 if patient:
-                    recommend_labtest(patient)
+                    recommend_labtest(patient)      #Fetches appropriate tests for the particular patient
                     print(f'Recommended tests for {patient.full_name}')
                     for test in patient.labtest_list:
                         print(f'\t {test.description}')                        

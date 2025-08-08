@@ -20,6 +20,11 @@ Functions
 
 - master_list (patient_list = []):
     It adds new patient object to the current master list.
+    
+Errors
+------
+- Raises ValueError if the user provided a wrong input.
+- Raises OverflowError if the user provided too many digits to interpret.
 """
 
 from entities import Patient
@@ -27,7 +32,7 @@ import numpy as np
 from dateutil.parser import parse
 import csv
 
-# Call function(options) to main menu  
+# Main interface in the reception module where user are given options to proceed  
 def reception_main_menu(patient_list = []):
     """
     Launches the main menu for reception staff.
@@ -45,15 +50,15 @@ def reception_main_menu(patient_list = []):
     """
     
     print(f'\n--Welcome to Reception: Main Files--\n')
-    option = 0
+    option = 0  # Starts with 0, no input yet
     while (option <= 4):
         print(f'Please choose an option:\n 1 = Add new patient \n 2 = Export patient details \n 3 = Exit\n')
-        option = int(input('Option: '))
+        option = int(input('Option: ')) 
         match option:
             case 1:
                 while True:
-                    add_patient(patient_list)
-                    add = input('Add another patient? (y/n): ').strip().lower()
+                    add_patient(patient_list)  
+                    add = input('Add another patient? (y/n): ').strip().lower() #Removes trailing and leading spaces; converts to make matching case insensitive
                     if add != 'y':
                         break
             case 2:
@@ -67,7 +72,7 @@ def reception_main_menu(patient_list = []):
                 print(f'\nInvalid option. Please try again.\n')
  
  
-# Add new patient
+# Function to add new patient
 def add_patient(patient_list):
     """
     Prompts the user (receptionist) to input new patient's details and adds them to the patient_list.
@@ -83,47 +88,53 @@ def add_patient(patient_list):
     ----------
     patient_list : list
         The list where the new Patient will be added. 
+    
+    Errors
+    ------
+    - Raises ValueError if the user provided a wrong birthdate format.
+    - Raises OverflowError if the user provided too many digits that doesn't represent a valid date.
+    
     """
 
-    correct_input = False
+    correct_input = False    # Starts with False, assuming there is no input yet
     while correct_input != True:
-        # First name
+        # First name input prompt
         while True:
-            first_name = input('Enter first name: ').strip().capitalize()
+            first_name = input('Enter first name: ').strip().capitalize() #Removes trailing and leading spaces; converts to make matching case insensitive
             if first_name: 
                 break
-        # Last name
+        # Last name input prompt
         while True:
-            last_name = input('Enter last name: ').strip().capitalize()
+            last_name = input('Enter last name: ').strip().capitalize() #Removes trailing and leading spaces; converts to make matching case insensitive
             if last_name: 
                 break
             
-        full_name = (f'{first_name} {last_name}')
+        full_name = (f'{first_name} {last_name}') #Verifies if both first name AND last name is provided; if not, loop continues until full name is satisfied
         
-        # Birthday
+        # Birthday input prompt
         while True:
             try:
-                birthday_str = input("Enter birthdate DD/MM/YYYY: ").strip()
-                birthday = parse(birthday_str, dayfirst=True).date()
+                birthday_str = input("Enter birthdate DD/MM/YYYY: ").strip() #Removes trailing and leading spaces
+                birthday = parse(birthday_str, dayfirst=True).date()  #Ensures that the correct date format is followed
                 break
             except (ValueError, OverflowError):
                 print("Invalid date. Please enter date of birth.\n")
         
-        # Sex / Gender
+        # Sex input prompt
         while True:
-            sex = input("Enter sex (M/F): ").strip().upper()
+            sex = input("Enter sex (M/F): ").strip().upper() #Removes trailing and leading spaces; converts to make matching case insensitive
             if sex in ['M','F']:
                 break
             print("Sex must be 'M' or 'F'.\n")
         
-        # existing patient
+        # Validates if input is already an existing one
         if full_name in patient_list:
                     print(f'{full_name} is already an existing patient.\n')
         else:
-            # Generate random ID
+            # Generate random ID to assign to new patient
             initials = f"{first_name[0].upper()}{last_name[0].upper()}"
             random_part = np.random.randint(100000, 999999)
-            patient_id = f'{initials}-{random_part}'
+            patient_id = f'{initials}-{random_part}' #generated ID will be e.g. KM-123456 from Kate Mendoza, 123456
             
             # Add new patient to patient list
             new_patient = Patient(patient_id,full_name,birthday,sex)
@@ -134,7 +145,7 @@ def add_patient(patient_list):
             
         correct_input = True
                 
- #Write CSV file   
+ #Writes into CSV file   
 def master_list (patient_list = []):
     """
     Current patient list will be exported to a CSV file and named patient_master_list.csv.
@@ -147,7 +158,7 @@ def master_list (patient_list = []):
     
     with open('patient_master_list.csv', 'w') as f: # w means write into the file
         writer = csv.writer(f)
-        writer.writerow(['ID', 'Full Name', 'Birthday', 'Sex'])
+        writer.writerow(['ID', 'Full Name', 'Birthday', 'Sex']) #Serves as table headings
         writer.writerows(map(lambda patient: [patient.id, patient.full_name, patient.birthday, patient.sex], patient_list))
       
             
