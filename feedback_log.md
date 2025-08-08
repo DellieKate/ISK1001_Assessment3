@@ -15,14 +15,14 @@ Our feedback process is guided by two core principles, directly aligned with the
 - This focuses on professional responsibility. Feedback in this category addresses whether the project has adequately identified and considered the potential risks, ethical implications, and security vulnerabilities associated with its design and data handling.
 
 ----
-## **3. Log of recieved feedback**
+## **3. Log of received feedback**
 
 ### Entry #1: Feedback Received – Lack of Consent Mechanism
 
 - **The specific documentation checked:**
 `reception.py` (patient data entry workflow) and overall application data collection process.
 
-- **When it was checked:**
+- **When it was checked:**  
 2025-08-06
 
 - **Who checked it:**
@@ -37,6 +37,45 @@ Ahmed Karakaci (external reviewer)
 3. Update `INSTRUCTIONS.md` and `README.md` to document the new consent step.
 4. Add inline code comments explaining the legal basis (if necessary APP 3 and APP 5).
 5. Link to the full analysis in `ETHICAL_SECURITY.md` for detailed legal and technical reasoning.
+
+### Entry #2 Feedback Received - General Documentation Feedback
+
+- **The specific documentation checked:**
+`README.md` / `INSTALLATION.md` / `INSTRUCTIONS.md`
+
+- **When was it checked:**  
+2025-08-08
+
+- **Who checked it:**
+Billy Vasiliadis (external reviewer, programmer)
+
+- **Any feedback provided:**  
+
+`README.md`:
+- Needs disclaimers about the system being advisory-only and needing a doctor to oversee. (Ethical)
+- The feature list could be better structured to highlight the features.  Some dot points would be good. (Usefulness)
+- Patients should be explicitly told how their data is being handled and used. (Ethical)
+
+`INSTALLATION.md`:
+- Mention how to deactivate the virtual environment when done (Usefulness)
+- Including an uninstall guide would help. (Usefulness)
+
+`INSTRUCTIONS.md`:
+- Formatting can be improved so that sections can be broken up and have headings i.e. "Getting Started", "Adding Patients", etc. (Usefulness)
+- Inclusion of disclaimers about this being on a test project so far, and to not use real patient info/data should be mentioned. (Ethical)
+
+- **Any actions to do based on the feedback provided:**
+`README.md`:
+- Disclaimer to be added at the start of the README.md to highlight the importance of it and make sure readers see it.
+- Feature list to be re-formatted into a list of features, with corresponding brief descriptions, and a summary above to make readers aware of what the section contains.
+- A Privacy section to be written up within the README.md file, that contains informations and disclaimers, in particular mentioning 'Data Handling' use.
+
+`INSTALLATION.md`:
+- Extra guided steps regarding 'deactivation' and 'uninstallation' to be appended to the Installation Guide.
+
+`INSTRUCTIONS.md`:
+- Document to be re-formatted to accomodate for better readability.  Sections will be labelled: 'Getting Started', 'Adding Patients', 'Determining Lab Tests', 'Generating Reports'.
+- Disclaimer stating users not to use real patient info/data to be added to the start of the INSTRUCTIONS.md file, as well as the main README.md file, to highlight the importance of it and make sure readers see it.
 
 ----
 
