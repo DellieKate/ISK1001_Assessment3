@@ -34,19 +34,19 @@ To view view our analysis of these considerations with respect to industry stand
 
 ### Entry #2: Feedback Received – Lack of Consent Mechanism
 
-- **The specific documentation checked:**
+**The specific documentation checked:**
 `README.md`, `INSTALLATION.md`, `reception.py` (patient data entry workflow) and overall application data collection process.
 
-- **When it was checked:**
+**When it was checked:**
 2025-08-06
 
-- **Who checked it:**
+**Who checked it:**
 Ahmed Karakaci (external reviewer)
 
-- **Any feedback provided:**
+**Any feedback provided:**
 "There is currently no step in the application to confirm that a patient has provided informed consent before their personal and health information is entered into the system. This presents a potential legal and ethical risk under privacy and health data protection laws. A straightforward improvement would be to add a mandatory prompt in the data entry workflow requiring the user (e.g., receptionist) to confirm that the patient has been informed about how their data will be collected, stored, and used, and that they have agreed to this. The record should not be saved unless consent is confirmed. While I am not familiar with the specific details of Australian privacy legislation, relevant requirements should be easy to locate. These frameworks set out obligations for obtaining consent, providing privacy notices, and ensuring transparency in the handling of sensitive health data and are designed to help companies and IT professionals build and develop safe, secure, and responsible software"
 
-- **Any actions to do based on the feedback provided:**
+**Any actions to do based on the feedback provided:**
 1. Create a **consent confirmation prompt** in the `add_patient` function of `reception.py` that requires the user to confirm the patient has been informed and has agreed to data collection.
 2. Prevent record creation if consent is not confirmed.
 3. Update `INSTRUCTIONS.md` and `README.md` to document the new consent step.
@@ -57,16 +57,16 @@ Ahmed Karakaci (external reviewer)
 
 ### Entry #3 Feedback Received - General Documentation Feedback
 
-- **The specific documentation checked:**
+**The specific documentation checked:**
 `README.md` / `INSTALLATION.md` / `INSTRUCTIONS.md`
 
-- **When was it checked:**
+**When was it checked:**
 2025-08-08
 
-- **Who checked it:**
+**Who checked it:**
 Billy Vasiliadis (external reviewer, programmer)
 
-- **Any feedback provided:**
+**Any feedback provided:**
 
 `README.md`:
 - Needs disclaimers about the system being advisory-only and needing a doctor to oversee. (Ethical)
@@ -81,7 +81,7 @@ Billy Vasiliadis (external reviewer, programmer)
 - Formatting can be improved so that sections can be broken up and have headings i.e. "Getting Started", "Adding Patients", etc. (Usefulness)
 - Inclusion of disclaimers about this being on a test project so far, and to not use real patient info/data should be mentioned. (Ethical)
 
-- **Any actions to do based on the feedback provided:**
+**Any actions to do based on the feedback provided:**
 `README.md`:
 - Disclaimer to be added at the start of the README.md to highlight the importance of it and make sure readers see it.
 - Feature list to be re-formatted into a list of features, with corresponding brief descriptions, and a summary above to make readers aware of what the section contains.
@@ -96,9 +96,48 @@ Billy Vasiliadis (external reviewer, programmer)
 
 ----
 
-TO ADD: PAUL's (see your notes)
+### Entry #4: Feedback Received – Repository Structure, Documentation, and Code Clarity
 
-<--- So we have two recieved feedbacks here so far --->
+**The specific documentation checked:**
+`README.md`, `INSTALLATION.md` (proposed rename to `Set_up.md`), repository folder structure, and `clinic.py`.
+
+**When it was checked:**
+2025-08-08
+
+**Who checked it:**
+Paul Augustine (external reviewer)
+
+**Any feedback provided:**
+1. **Repository structure**
+   - The current repository layout should follow a layered structure as outlined in the Python documentation (http://docs.python-guide.org/writing/structure).
+     Recommended example:
+       - **Docs/**
+         - `ReadMe.md`
+         - Other documentation files referenced by the README
+       - **Source/**
+         - All code files (e.g. `commands.py`)
+       - **Data/Output/**
+         - Sample files (e.g. `.csv`) linked in README
+
+2. **README File**
+   - Provide links to the official websites of all third-party modules used in the project.
+   - Rename `Installation.md` to `Set_up.md`.
+   - Rename “Usage/Instructions” to “Usage”.
+
+3. **Installation (Set_up.md) File**
+   - Expand the “create” and “activate” instructions.
+     - Clearly explain what is being created (e.g. a virtual environment) and what is being activated.
+
+4. **Code in `clinic.py`**
+   - Include a comment or explanation describing the purpose of the main `while` loop.
+
+- **Any actions to do based on the feedback provided:**
+1. Reorganise the repository into a layered structure (`Docs/`, `Source/`, `Data/Output/`) and update all file references in the README accordingly.
+2. Add hyperlinks in the README to the official documentation for all third-party modules listed in `requirements.txt`.
+3. (Optional) Rename `Installation.md` to `Set_up.md` for consistency with feedback.
+4. Rename “Usage/Instructions” section in the README to “Usage”.
+5. Expand the “create” and “activate” steps in the installation guide to explain what a virtual environment is and what activation does.
+6. Add a descriptive comment above the main `while` loop in `clinic.py` explaining its role in controlling the application’s main menu and handling user input.
 
 
 
