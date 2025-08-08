@@ -80,17 +80,18 @@ Below is a condensed table of third party modules, their licenses, and the versi
 
 <!-- - Make link to third party licenses work. -->
 
-| Name            | Version     | License                                       |
-|-----------------|-------------|-----------------------------------------------|
-| Pygments        | 2.19.2      | BSD License                                   |
-| fpdf            | 1.7.2       | GNU Lesser General Public License v3 (LGPLv3) |
-| iniconfig       | 2.1.0       | MIT License                                   |
-| numpy           | 2.2.6       | BSD License                                   |
-| packaging       | 25.0        | Apache Software License; BSD License          |
-| pluggy          | 1.6.0       | MIT License                                   |
-| pytest          | 8.4.1       | MIT License                                   |
-| python-dateutil | 2.9.0.post0 | Apache Software License; BSD License          |
-| six             | 1.17.0      | MIT License                                   |
+| Name            | Version     | License                                       | Description                                                                                           |
+|-----------------|-------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| Django          | 5.2.5       | BSD License                                   | A high-level Python web framework that encourages rapid development and clean, pragmatic design.      |
+| PTable          | 0.9.2       | BSD License                                   | A simple Python library for easily displaying tabular data in a visually appealing ASCII table format |
+| asgiref         | 3.9.1       | BSD License                                   | ASGI specs, helper code, and adapters                                                                 |
+| fpdf            | 1.7.2       | GNU Lesser General Public License v3 (LGPLv3) | Simple PDF generation for Python                                                                      |
+| numpy           | 2.2.6       | BSD License                                   | Fundamental package for array computing in Python                                                     |
+| packaging       | 25.0        | Apache Software License; BSD License          | Core utilities for Python packages                                                                    |
+| pipdeptree      | 2.28.0      | UNKNOWN                                       | Command line utility to show dependency tree of packages.                                             |
+| python-dateutil | 2.9.0.post0 | Apache Software License; BSD License          | Extensions to the standard Python datetime module                                                     |
+| six             | 1.17.0      | MIT License                                   | Python 2 and 3 compatibility utilities                                                                |
+| sqlparse        | 0.5.3       | BSD License                                   | A non-validating SQL parser.                                                       
 
 
 ## Acknowledgements
