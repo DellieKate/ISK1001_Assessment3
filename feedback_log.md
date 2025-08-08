@@ -15,9 +15,29 @@ Our feedback process is guided by two core principles, directly aligned with the
 - This focuses on professional responsibility. Feedback in this category addresses whether the project has adequately identified and considered the potential risks, ethical implications, and security vulnerabilities associated with its design and data handling.
 
 ----
-## **3. Running log of recieved feedback**
-**[date: title of log]**
-- Here we will store a running list of recieved feedback.
+## **3. Log of recieved feedback**
+
+### Entry #1: Feedback Received – Lack of Consent Mechanism
+
+- **The specific documentation checked:**
+`reception.py` (patient data entry workflow) and overall application data collection process.
+
+- **When it was checked:**
+2025-08-06
+
+- **Who checked it:**
+Ahmed Karakaci (external reviewer)
+
+- **Any feedback provided:**
+"There’s no step in the app to confirm that the patient has given consent before their personal and health information is entered. This could be a legal and ethical issue under privacy laws. A small fix would be to add a prompt to confirm consent before saving the record. I am not familiar with Australian privacy laws, so cannot make recommendations but they should be easy to find. Cross reference them with laws and frameworks that deal with the collection of senstitive personal data, of which, medical records and biographical details will among them."
+
+- **Any actions to do based on the feedback provided:**
+1. Create a **consent confirmation prompt** in the `add_patient` function of `reception.py` that requires the user to confirm the patient has been informed and has agreed to data collection.
+2. Prevent record creation if consent is not confirmed.
+3. Update `INSTRUCTIONS.md` and `README.md` to document the new consent step.
+4. Add inline code comments explaining the legal basis (if necessary APP 3 and APP 5).
+5. Link to the full analysis in `ETHICAL_SECURITY.md` for detailed legal and technical reasoning.
+
 ----
 
 ## **4. Log of provided feedback**
@@ -60,29 +80,6 @@ To view view our analysis of these considerations with respect to industry stand
   2. Update the System Requirements section to mention that Git must be installed before running `git clone`.
   3. Add a short, basic installation and usage summary to the main `README.md` for quick reference.
   4. Review the 'Class and Function Usage' documentation and consider adding more examples showing interaction between classes and functions.
-
-
-  ### Entry #3: Feedback Received – Lack of Consent Mechanism
-
-  - **The specific documentation checked:**
-    `reception.py` (patient data entry workflow) and overall application data collection process.
-
-  - **When it was checked:**
-    2025-08-06
-
-  - **Who checked it:**
-    Ahmed Karakaci (external reviewer)
-
-  - **Any feedback provided:**
-    "There’s no step in the app to confirm that the patient has given consent before their personal and health information is entered. This could be a legal and ethical issue under privacy laws. A small fix would be to add a prompt to confirm consent before saving the record. I am not familiar with Australian privacy laws, so cannot make recommendations but they should be easy to find. Cross reference them with laws and frameworks that deal with the collection of senstitive personal data, of which, medical records and biographical details will among them."
-
-  - **Any actions to do based on the feedback provided:**
-    1. Create a **consent confirmation prompt** in the `add_patient` function of `reception.py` that requires the user to confirm the patient has been informed and has agreed to data collection.
-    2. Prevent record creation if consent is not confirmed.
-    3. Update `INSTRUCTIONS.md` and `README.md` to document the new consent step.
-    4. Add inline code comments explaining the legal basis (if necessary APP 3 and APP 5).
-    5. Link to the full analysis in `ETHICAL_SECURITY.md` for detailed legal and technical reasoning.
-
 
 
 
