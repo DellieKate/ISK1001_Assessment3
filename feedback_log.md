@@ -173,4 +173,51 @@ Paul Augustine (external reviewer)
   4. Review the 'Class and Function Usage' documentation and consider adding more examples showing interaction between classes and functions.
 
 --
-### Entry #2 of Given Feedback: Kate's
+### Entry #2 of Given Feedback:
+
+**The specific documentation checked:**
+  `README.md`, source code files, and ethical/security considerations section.
+
+**When it was checked:**
+  2025-08-08
+
+**Who checked it:**
+  Kate (Team: Kate, Dylan, and George)
+
+**Any feedback provided:**
+  **README File:**
+  - The purpose of the app was clearly communicated.
+  - Using bullet points for features gives a clear, accessible overview.
+  - Including a CPU usage report in the installation section was a thoughtful addition.
+  - Overall, the README is friendly and easy to follow for first-time users.
+
+  **Code Review:**
+  - Code comments effectively explain the logic and flow, aiding understanding.
+
+  **Ethical and Security Considerations:**
+  1. **Data Privacy and Storage**
+     - Relevant Principles: APP 1, APP 11, ACM 1.6 – Respect Privacy
+     - Current design only collects age, gender, and fitness level, without requesting sensitive personal data.
+     - However, future enhancements may include APIs that detect precise geolocation, which can unintentionally expose personal information (e.g., IP addresses, device location data). Such data can reveal user activity patterns and habits, compromising user safety.
+     **Proposed Improvement:**
+     - Include a privacy disclaimer stating that no personal information will be collected and shared without consent and that all collected data, if ever, will be stored securely.
+
+  2. **Potential Negative Mental Health Impacts**
+     - Relevant Principles: ACM 1.2 – Avoid Harm
+     - The app should address the risk that unrealistic fitness goals may lead to feelings of guilt or anxiety.
+     **Proposed Improvements:**
+     - Consider adding disclaimers such as:
+       - This is meant to be a simple guide and a source of motivation. It is not a replacement for professional fitness or medical advice.
+       - Set personalised goals that will work.
+       - Suggested repetitions and workout times should be adjusted to match one's fitness level.
+
+  Overall, well done guys!
+
+  **References:**
+  - [APP Australian Privacy Principles](https://www.oaic.gov.au/privacy/australian-privacy-principles/)
+  - [ACM Code of Ethics and Professional Conduct](https://www.acm.org/code-of-ethics)
+
+**Any actions to do based on the feedback provided:**
+  1. Consider adding a privacy disclaimer to clarify that no personal information will be collected or shared without consent, and that any collected data will be stored securely.
+  2. If future features include geolocation or other sensitive data collection, ensure compliance with APP 1, APP 11, and ACM 1.6 by implementing secure storage and explicit consent mechanisms.
+  3. Add disclaimers to address potential negative mental health impacts, clarifying that the app is a guide and not a substitute for professional advice, and encouraging users to set realistic, personalised goals.
