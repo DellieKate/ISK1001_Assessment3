@@ -21,7 +21,7 @@
 <!-- The Purpose of the Application -->
 Welcome to KLM LabTest Advisor app.  This app determinines clinical laboratory tests for medical patients.
 
-Designed and developed to be used in a small clinical setting, primarily by Doctors and staff (i.e. Reception, Nurses, etc.), this app offers convenience and organisation by automating the process, helping save time and energy.  Since small medical practices can be a chaotic place, keeping things organised and not having to rush during and between patients can be difficult.  With this app, things can be kept running smoothly, allowing those who work in them to provide better care and treatment given the increase of available time.
+Designed and developed to be used in a small clinical setting, primarily by Doctors and staff (i.e. Reception, Nurses, etc.), this app offers convenience and organisation by automating the process, helping save time and energy.  Since small medical practices can be a chaotic place, keeping things organised and not having to rush during and between patients can be difficult, potentially leading to human error, an "automated laboratory test recommendation system can provide rapid and appropriate test selection"<sup> [1](https://pmc.ncbi.nlm.nih.gov/articles/PMC8227070/#sec5-diagnostics-11-00990)</sup>.  This is the problem this app helps to solve, as "inappropriate laboratory test ordering hampers patient care and increases financial burden for healthcare."<sup> [1](https://pmc.ncbi.nlm.nih.gov/articles/PMC8227070/#sec5-diagnostics-11-00990)</sup>.  While there is some existing software addressing the same issues, such as ['__LabMe<sub>By HelloWellness</sub>__'](https://labme.ai/blogs/health/lab-test-software#:~:text=the%20issues%20immediately.-,Mobile%20App,the%20best%20lab%20test%20software.), we feel there is room in this expanding market for this application.  As healthcare facilities are increasing there use of automated processes, such as the recent pathology upgrades at St Vincents Hospital<sup> [2](https://www.svhm.org.au/newsroom/news/automation-upgrade-enhances-pathology-at-st-vincent-s-melbourne)</sup> in Melbourne, the industry incorporating automated technology more and more.  Although still a work in progress, we hope with this app we can help those who live to help others.
 
 ## Features
 
@@ -107,3 +107,9 @@ Below is a condensed table of third party modules, their licenses, and the versi
 * [readmine](https://github.com/mhucka/readmine?tab=readme-ov-file#getting-help)
 
 * [APP(Quick Reference)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference)
+
+* [LabTest](https://labme.ai/blogs/health/lab-test-software#:~:text=the%20issues%20immediately.-,Mobile%20App,the%20best%20lab%20test%20software.)
+
+* <sup>[[1] Deep into Laboratory](https://pmc.ncbi.nlm.nih.gov/articles/PMC8227070/)</sup>
+
+* <sup>[[2] St Vincents](https://www.svhm.org.au/newsroom/news/automation-upgrade-enhances-pathology-at-st-vincent-s-melbourne)</sup>
