@@ -18,7 +18,7 @@ Our feedback process is guided by two core principles, directly aligned with the
 ## **3. Log of Received Feedback**
 
 
-### Entry #1 of Given Feedback: Internal Security Audit & Documentation Review [04/09/2025]
+### **Entry #1 of Given Feedback: Internal Security Audit & Documentation Review [04/09/2025]**
 Contributers and reviewers: Dylan Esteban, Kate Mendoza, George Vasiliadis
 
 #### Findings:
@@ -31,8 +31,9 @@ As this application handles sensitive patient data, we conducted an internal aud
 
 To view view our analysis of these considerations with respect to industry standard legal and ethical frameworks, as well as our remediation strategies and action items, please refer to the [ETHICS_SECURITY.md](ETHICS_SECURITY.md).
 
+----
 
-### Entry #2: Feedback Received – Lack of Consent Mechanism
+### **Entry #2: Feedback Received – Lack of Consent Mechanism**
 
 **The specific documentation checked:**
 `README.md`, `INSTALLATION.md`, `reception.py` (patient data entry workflow) and overall application data collection process.
@@ -53,9 +54,9 @@ Ahmed Karakaci (external reviewer)
 4. Add inline code comments explaining the legal basis (if necessary APP 3 and APP 5).
 5. Link to the full analysis in `ETHICAL_SECURITY.md` for detailed legal and technical reasoning.
 
---
+----
 
-### Entry #3 Feedback Received - General Documentation Feedback
+### **Entry #3 Feedback Received - General Documentation Feedback**
 
 **The specific documentation checked:**
 `README.md` / `INSTALLATION.md` / `INSTRUCTIONS.md`
@@ -96,7 +97,7 @@ Billy Vasiliadis (external reviewer, programmer)
 
 ----
 
-### Entry #4: Feedback Received – Repository Structure, Documentation, and Code Clarity
+### **Entry #4: Feedback Received – Repository Structure, Documentation, and Code Clarity**
 
 **The specific documentation checked:**
 `README.md`, `INSTALLATION.md` (proposed rename to `Set_up.md`), repository folder structure, and `clinic.py`.
@@ -138,16 +139,12 @@ Paul Augustine (external reviewer)
 4. Rename “Usage/Instructions” section in the README to “Usage”.
 5. Expand the “create” and “activate” steps in the installation guide to explain what a virtual environment is and what activation does.
 6. Add a descriptive comment above the main `while` loop in `clinic.py` explaining its role in controlling the application’s main menu and handling user input.
-
-
-
-
-
+----
 
 
 ## **4. Log of Provided Feedback**
 
-### Entry #1 of Given Feedback:
+### **Entry #1 of Given Feedback:**
 
 **The specific documentation checked:**
   `README.md`, `INSTALLATION.md`, `USAGE.md` (Instruction Guide), and Class/Function usage documentation.
