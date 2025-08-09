@@ -2,10 +2,11 @@
 
 ***Find out what clinical lab test you need!***
 
-[![License](https://img.shields.io/badge/License-Apache-red)](https://www.apache.org/licenses/LICENSE-2.0)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![License](https://img.shields.io/badge/License-BSD-%23AB2B28)
-![License](https://img.shields.io/badge/License-GNU-%23A42E2B)
+[![License: Apache](https://img.shields.io/badge/License-Apache-red)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
+[![License: BSD](https://img.shields.io/badge/License-BSD-%23AB2B28)](https://opensource.org/licenses/BSD-3-Clause)
+[![License: GNU GPL v3](https://img.shields.io/badge/License-GNU-%23A42E2B)](https://www.gnu.org/licenses/gpl-3.0)
+
 
 ## Table of Contents
 
