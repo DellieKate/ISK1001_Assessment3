@@ -1,18 +1,19 @@
 <!-- Ethical and Security based considerations-->
-# Introduction
-This section provides a comprehensive overview of the ethical and security considerations that were addressed during the development of the project.
 
-- basic idea: The proposed solutions for ethical/security issues we raise in the project can be detailed here and just briefly mentioned in the larger README file.
+# Ethical & Security Considerations
 
-Current considerations:
-#### **1. Unsecured CSV File Storage (APP 11)**: Patient data is stored in a plain-text CSV file, which presents risks of unauthorised access. Future versions should implement encryption or access controls.
+## Introduction
 
-#### **2. No Authentication or User Access Control (APP 6, APP 11)** The current CLI interface does not restrict access based on user roles (e.g., doctor or receptionist). Adding a basic login system would protect sensitive data and ensure only authorised personnel can access patient records.
+This document presents an analysis and reflection on recieved feedback items from our project’s development process, focusing on ethical, privacy, and security considerations.
 
-#### **3. Inability to Edit Incorrect Records (APP 10)**: Data errors cannot currently be corrected, which may lead to medical or biographical inaccuracies. A mechanism for updating patient records is essential.
+From the full set of feedback logs recorded in `feedback_log.md`, **four key issues** were chosen for deeper examination. These were selected because they represent significant ethical and security-related challenges identified during the project, either through internal audits or external reviews.
 
-#### **4. Lack of Consent Mechanism (APP 3, APP 5)**: There is currently no process for confirming patient consent prior to data entry. A prompt for user verification and consent is recommended.
+For each issue, we:
+- Summarise the feedback received
+- Analyse its ethical and legal implications, referencing relevant frameworks and standards, and
+- Outline the actions taken or planned to address it
 
+The aim of this document is to demonstrate how feedback was used not only to improve the technical quality of the application, but also to ensure compliance with professional, ethical, and legal industry standards.
 
 
 ## Proposed Solutions
