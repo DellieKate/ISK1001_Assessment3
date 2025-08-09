@@ -12,7 +12,7 @@
 ▶ [About](#about)
 ▶ [Installation](#installation)
 ▶ [Usage](#usage)
-▶ [Ethical & Security-based](#ethical--security-based)
+▶ [Ethical & Security-based Considerations](#ethical--security-based-considerations)
 ▶ [Licenses](#licenses)
 ▶ [Acknowledgements](#acknowledgements)
 
@@ -70,7 +70,9 @@ Data errors cannot currently be corrected, which may lead to medical or biograph
 #### **4. Lack of Consent Mechanism (APP 3, APP 5)**:
 There is currently no process for confirming patient consent prior to data entry. A prompt for user verification and consent is recommended.
 
-More detail and elaboration of these issues and proposed solutions can be found in our project's internal documentation and read [HERE](README_Files/ETHICS_SECURITY.md).
+More detail and elaboration of these issues and others recieved via external feedback, along with proposed solutions can be found in our project's internal documentation and read [HERE](README_Files/ETHICS_SECURITY.md).
+
+For our complete record of both given and received feedback, please refer to [feedback_log.md](feedback_log.md).
 
 ## Licenses
 
@@ -91,7 +93,7 @@ Below is a condensed table of third party modules, their licenses, and the versi
 | pipdeptree      | 2.28.0      | UNKNOWN                                       | Command line utility to show dependency tree of packages.                                             |
 | python-dateutil | 2.9.0.post0 | Apache Software License; BSD License          | Extensions to the standard Python datetime module                                                     |
 | six             | 1.17.0      | MIT License                                   | Python 2 and 3 compatibility utilities                                                                |
-| sqlparse        | 0.5.3       | BSD License                                   | A non-validating SQL parser.                                                       
+| sqlparse        | 0.5.3       | BSD License                                   | A non-validating SQL parser.
 
 
 ## Acknowledgements
