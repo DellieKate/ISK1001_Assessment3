@@ -99,7 +99,7 @@ Implementation of a **mandatory consent confirmation mechanism** in the patient 
 - **Error Handling:** Validate input so only “y” or “n” is accepted when prompting the receptionist.
 
 
-## Reflection – Documentation Disclaimers, Privacy Transparency, and Data Handling
+## Issue 3: Documentation Disclaimers, Privacy Transparency, and Data Handling
 
 ### Overview of Feedback
 On **2025-08-08**, we received an external review and feedback from **Billy Vasiliadis**, who reviewed our `README.md`, `INSTALLATION.md`, and `INSTRUCTIONS.md` files. His feedback included both **usability improvements** as well as **ethical considerations**.
@@ -168,3 +168,74 @@ Furthermore, by adding clear disclaimers and privacy statements, we:
 - Reduce the risk of misuse or misinterpretation of the system’s outputs.
 - Model best practice for transparency in handling sensitive data.
 - Align our documentation with **APP 3**, **APP 5**, the **AHPRA Code of Conduct**, as well as covering **Principle 1.2: “Avoid harm”** of the **ACM’s Code of Ethics**.
+
+
+## Issue 4 – Repository Structure, Documentation Clarity, and Code Transparency
+
+### Overview of Feedback
+On 2025-08-08, we received an external review from our class peer Paul Augustine, who examined our repository structure, `README.md`, `INSTALLATION.md` (proposed to be renamed `Set_up.md`), and parts of our source code (`clinic.py`). His feedback focused primarily on repository organisation, documentation clarity, and code readability
+
+**Key points from the feedback:**
+1. **Repository Structure**
+   - The current repository layout should follow a layered structure as outlined in the [Python documentation](http://docs.python-guide.org/writing/structure).
+   - Recommended example:
+     - **Docs/** – `README.md` and other documentation files referenced by the README.
+     - **Source/** – All code files (e.g., `commands.py`).
+     - **Data/Output/** – Sample files (e.g., `.csv`) linked in the README.
+
+2. **README File**
+   - Provide links to the official websites of all third-party modules used in the project.
+   - Rename `Installation.md` to `Set_up.md`.
+   - Rename “Usage/Instructions” to “Usage”.
+
+3. **Installation (`Set_up.md`) File**
+   - Expand the “create” and “activate” instructions.
+   - Clearly explain what is being created (e.g., a virtual environment) and what is being activated.
+
+4. **Code in `clinic.py`**
+   - Include more details, such as a comment or explanation describing the purpose of the main `while` loop.
+
+---
+
+### Ethical and Professional Considerations
+While Paul’s feedback is primarily about usability and maintainability, there are still relevant professional responsibility and ethical aspects that we are to consider:
+
+1. **Transparency and Accessibility**
+   - Importantly, a well-structured repository and clear documentation make it easier for new developers, reviewers, and stakeholders to understand the project.
+   - This aligns with the **ACM Code of Ethics Principle 2.5** which states: "Give comprehensive and thorough evaluations of computer systems and their impacts, including analysis of possible risks."
+-  A clear structure reduces the risk of misunderstanding the system’s purpose or functionality.
+
+2. **Maintainability and Collaboration**
+   - Following established Python project structure guidelines ensures that the project is maintainable and can be easily handed over to other developers.
+   - This supports **ACM Principle 2.6** which states:*"Perform work only in areas of competence, and maintain competence through ongoing professional development."*
+     Consequently, adhering to recognised industry standards - both legal and ethical - is part of professional competence which must be carried out at all times.
+
+3. **Code Clarity and Accountability**
+   - Add comments to explain the purpose of the main loop in `clinic.py` would improve code transparency and accountability.
+   - This is important for ethical software development, as it ensures that future maintainers can understand the logic and avoid introducing errors that could affect system behaviour.
+—
+
+### Remediation Plan – Action Items
+The following action items have been crafted to review and consider for potential future iterations of the application:
+
+#### Repository Structure
+- Reorganise the repository into:
+  - **Docs/** – `README.md` and other documentation files.
+  - **Source/** – All Python source code files.
+  - **Data/Output/** – Sample `.csv` files and other generated outputs.
+- Update all file references in the README to reflect the new structure.
+
+#### `README.md`
+- Add hyperlinks to the official documentation for all third-party modules listed in `requirements.txt`.
+- Rename `Installation.md` to `Set_up.md`.
+- Rename “Usage/Instructions” to “Usage” for consistency and clarity.
+
+#### `Set_up.md` (formerly `Installation.md`)
+- Expand the “create” and “activate” steps to:
+  - Explain that a **virtual environment** is being created.
+  - Explain that activation switches the Python environment to the isolated virtual environment.
+
+#### `clinic.py`
+- Add a descriptive comment above the main `while` loop explaining:
+  - Its role in controlling the application’s main menu.
+  - How it handles user input and directs program flow.
