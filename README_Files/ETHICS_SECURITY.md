@@ -81,9 +81,10 @@ The current application design does not provide any such notice or confirmation 
 
 ---
 
-## Solution & Action Items
-
+## Solution:
 Implementation of a **mandatory consent confirmation mechanism** in the patient data entry workflow (for example, adding it to `add_patient()` in `reception.py`) that includes error handling.
+
+## Remediation Plan & Action Items:
 
 ### Implementation details:
 - **Consent Prompt:** Before saving a new patient record, display a prompt:
@@ -96,3 +97,74 @@ Implementation of a **mandatory consent confirmation mechanism** in the patient 
   - Staff username or ID
 - **Future Iterations:** Consider integrating the consent log into a secure database for better auditability, such as if the application were utilised in a proper medical setting.
 - **Error Handling:** Validate input so only “y” or “n” is accepted when prompting the receptionist.
+
+
+## Reflection – Documentation Disclaimers, Privacy Transparency, and Data Handling
+
+### Overview of Feedback
+On **2025-08-08**, we received an external review and feedback from **Billy Vasiliadis**, who reviewed our `README.md`, `INSTALLATION.md`, and `INSTRUCTIONS.md` files. His feedback included both **usability improvements** as well as **ethical considerations**.
+
+**Concerning usability**, he suggested the following improvements:
+- Structuring the feature list in the README for clarity.
+- Adding clear deactivation and uninstallation instructions to the Installation Guide.
+- Improving formatting and section headings in the Instructions Guide for better readability.
+
+While much of his feedback relates to documentation clarity and usability, several points have **direct ethical and legal implications**:
+
+---
+
+### Informed Use & Avoiding Misrepresentation
+- Without a disclaimer, there is a risk that users may interpret the application’s recommendations as definitive medical advice.
+- This could lead to misuse of the system, potentially resulting in harm if decisions are made without professional oversight.
+- From an ethical standpoint, this relates to **duty of care** and **avoiding harm**. This is aligned with the **ACM Code of Ethics Principle 1.2: "Avoid harm"**, which refers to negative consequences, especially those that are both significant and unjust.
+
+---
+
+### Transparency in Data Handling
+- **APP 5** (Notification of the collection of personal information) requires that individuals are informed about how their data will be stored, disclosed, and used.
+- Even though this is a test project, failing to include a privacy statement could be seen as a lack of transparency, which undermines trust and fails to mirror best practice for handling sensitive health data.
+- This is a relevant aspect to consider in this new project when reviewing the codebase and documentation.
+
+---
+
+### Preventing Unauthorised Use of Real Data
+- Including a disclaimer to not use real patient data is both an ethical safeguard and a legal precaution.
+- This aligns with **APP 3** (Collection of solicited personal information), which prohibits collecting sensitive information without consent and a legitimate purpose.
+- Additionally, this aligns with the **AHPRA Code of Conduct**, which requires health practitioners to protect patient confidentiality and only collect information when and if necessary.
+
+---
+
+## Remediation Plan
+
+Based on this feedback, we crafted the following action items to be carried out and/or considered for future iterations of the application:
+
+1.  `README.md`
+- Add a disclaimer at the top stating:
+  - The system is for educational and demonstration purposes only.
+  - It is not a substitute for professional medical advice.
+  - All recommendations must be reviewed by a qualified doctor – ensuring professional oversight.
+- Reformat the **Features** section into a bullet-point list with brief descriptions for each feature.
+- Add a **Privacy & Data Handling** section explaining:
+  - How the application processes patient data.
+  - That no data is transmitted externally and that users should not enter real patient data.
+
+2.  `INSTALLATION.md`
+- Update to include instructions for deactivating the virtual environment.
+- Update to include an uninstallation guide for removing the application as well as its dependencies.
+
+3.  `INSTRUCTIONS.md`
+- Reformat with clear section headings:
+  - "Getting Started"
+  - "Adding Patients"
+  - "Determining Lab Tests"
+  - "Generating Reports"
+- Add a disclaimer at the start reiterating that:
+  - The system is for demonstration purposes only.
+  - Users must not enter real patient data.
+
+---
+
+Furthermore, by adding clear disclaimers and privacy statements, we:
+- Reduce the risk of misuse or misinterpretation of the system’s outputs.
+- Model best practice for transparency in handling sensitive data.
+- Align our documentation with **APP 3**, **APP 5**, the **AHPRA Code of Conduct**, as well as covering **Principle 1.2: “Avoid harm”** of the **ACM’s Code of Ethics**.
