@@ -1,6 +1,4 @@
-<!-- Ethical and Legal based considerations-->
-
-# Ethical & Security Considerations
+<!-- Ethical and Legal based Considerations-->
 
 ## Introduction
 
@@ -24,12 +22,9 @@ The aim of this document is to demonstrate how feedback was used not only to imp
 
 A critical security vulnerability involving the insecure storage of sensitive patient data was identified in the `reception.py` file. The `master_list` function takes all patient data which includes sensitive and private health information and writes it directly to an unencrypted plain-text CSV file: `patient_master_list.csv`. This exposes patient data to unauthorised access, as the file is readable by any user or process with access to its location.
 
-
 ### **Legal & Ethical Considerations**
 
 With respect to the relevant legal literature, this risk is likely in violation of APP 11 (Security of personal information) as  it does not take reasonable steps to protect the data from unauthorised access and use. APP 11 states that compliance requires taking reasonable steps to protect personal information it holds from misuse, interference, modification or disclosure, and also from unauthorised access. This vulnerability is also in non-compliance with the AHPRA Code of Conduct which demands awareness and compliance with privacy requirements that pertain to the holding of health records, preventing unauthorised access as well as maintaining the privacy, protection, and integrity of electronic records. The Department of Health’s Private Policy Act (2020) delineates what they understand to constitute ‘reasonable steps’, and lists “password protection for electronic files” as a central key security control to be implemented; something the initial design of KLM LabTest Advisor CLI application lacked. Consequently, our remediation plan involves a solution to mirror industry standard best practices by refactoring the relevant code to create a password-protected encrypted file.
-
----
 
 ### **Solution: Implement Encryption or Access Controls**
 
@@ -39,8 +34,6 @@ We propose:
 
 - Using **Fernet symmetric encryption** for data export.
 - Prompting the user for a password to generate the encryption key via a key derivation function.
-
----
 
 ### **Action Items – Remediation Plan**
 
@@ -100,7 +93,6 @@ Implementation of a **mandatory consent confirmation mechanism** in the patient 
   - Staff username or ID
 - **Future Iterations:** Consider integrating the consent log into a secure database for better auditability, such as if the application were utilised in a proper medical setting.
 - **Error Handling:** Validate input so only “y” or “n” is accepted when prompting the receptionist.
-
 - - -
 
 
@@ -192,8 +184,6 @@ On 2025-08-08, we received an external review from our class peer Paul Augustine
 4. **Code in `clinic.py`**
    - Include more details, such as a comment or explanation describing the purpose of the main `while` loop.
 
----
-
 ### **Ethical and Professional Considerations**
 While Paul’s feedback is primarily about usability and maintainability, there are still relevant professional responsibility and ethical aspects that we are to consider:
 
@@ -210,7 +200,7 @@ While Paul’s feedback is primarily about usability and maintainability, there 
 3. **Code Clarity and Accountability**
    - Add comments to explain the purpose of the main loop in `clinic.py` would improve code transparency and accountability.
    - This is important for ethical software development, as it ensures that future maintainers can understand the logic and avoid introducing errors that could affect system behaviour.
-—
+
 
 ### **Remediation Plan – Action Items**
 The following action items have been crafted to review and consider for potential future iterations of the application:
@@ -236,3 +226,18 @@ The following action items have been crafted to review and consider for potentia
 - Add a descriptive comment above the main `while` loop explaining:
   - Its role in controlling the application’s main menu.
   - How it handles user input and directs program flow.
+
+
+## References
+
+Association for Computing Machinery. (2018). *ACM Code of Ethics and Professional Conduct*. Retrieved 3 August 2025, from https://www.acm.org/code-of-ethics
+
+Australian Government Department of Health. (2020, October). *Privacy Policy*. Retrieved 4 August 2025, from https://www.health.gov.au/sites/default/files/documents/2021/04/privacy-policy.pdf
+
+Australian Health Practitioner Regulation Agency (AHPRA). (n.d.). *Managing health records*. Retrieved 5 August 2025, from https://www.ahpra.gov.au/Resources/Managing-health-records.aspx
+
+Australian Health Practitioner Regulation Agency (AHPRA). (n.d.). *Code of Conduct*. Retrieved 3 August 2025, from https://www.ahpra.gov.au/documents/default.aspx?record=WD23/32727&dbid=AP&chksum=WtfbsggSV39UJyNGjVwXWg%3D%3D
+
+Office of the Australian Information Commissioner. (n.d.). *Australian Privacy Principles — quick reference*. Retrieved 2 August 2025, from https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference
+
+Reitz, R. & Schlusser, T. (n.d.). *Structuring Your Project*. In *The Hitchhiker’s Guide to Python*. Retrieved 8 August 2025, from http://docs.python-guide.org/writing/structure/
