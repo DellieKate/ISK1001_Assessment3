@@ -15,9 +15,15 @@ Variables
 patient_list : list
     It contains the list of Patient objects that is shared by both reception and doctor modules.
     
+Options
+-------
+1 = Reception: Main Files
+2 = Doctor's Files
+3 = Exit
+        
 Errors
 ------
-- The script also raises ValueError if the user provided a wrong input (input should be an integer value between 1 and 3 only).
+- Raises ValueError if the user provided is not an integer between 1 and 3
 """
 
 
@@ -29,16 +35,13 @@ patient_list = []
 
 user = 0
 
-while True:
+while True:     #Loops infinitely until user specifically exits the app
     print(f'\n*** KLM MEDICAL CENTRE ***')
     print(f'-- Melbourne, Victoria --')
     print("-" * 25)
     print(f'\nWELCOME!')
 
     print(f'\nPlease choose user:\n 1 = Reception \n 2 = Doctor \n 3 = Exit\n')
-        # 1 = "Reception: Main Files"
-        # 2 = "Doctor\'s Files"
-        # 3 = "Exit" 
   
     try:
         user = int(input('User:  '))  

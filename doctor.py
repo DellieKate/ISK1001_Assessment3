@@ -29,10 +29,18 @@ import create_pdf
 def doctor_main_menu(patient_list = []):
     """
     Main interface in the doctor's module.
+    Prompts for patient's ID to retrieve the corresponding details (Patient instance) from the provided list (patient_list). 
+    If patient details are retrieved, the app will recommend the necessary lab tests along with its description. 
+    Option is provided to either print, or not, a PDF report containing patient details. 
+    The file will be generated on the current directory. 
     
-    Usage 
-    -----
-    User needs to input the patient's ID to retrieve the corresponding details from the patient_list. If patient details are retrieved, the app will recommend the necessary lab tests along with its description. There is an option at the end either to print the report as a PDF or not.
+    If patient details is not found, the system displays a message and prompts for a patient ID again.
+    
+    Parameter 
+    ---------
+    patient_list : list
+        -  List of Patient objects
+        
     """
     
     print(f'\nWelcome to Doctor\'s Files.')
@@ -42,13 +50,15 @@ def doctor_main_menu(patient_list = []):
         option = int(input('Option: '))
         match option:
             case 1:
+                # Patient ID input prompt
                 pID = input('Input patient ID: ' ).strip()  #Removes trailing and leading spaces
                 patient = find_patient_by_id(patient_list, pID)
                 if patient:
                     recommend_labtest(patient)      #Fetches appropriate tests for the particular patient
                     print(f'Recommended tests for {patient.full_name}')
                     for test in patient.labtest_list:
-                        print(f'\t {test.description}')                        
+                        print(f'\t {test.description}')  
+                    # Prompt to generate PDF report                     
                     print_report = input('\nPrint patient\'s report? Y/N  \n').strip().capitalize()
                     if print_report == 'Y':
                         print("Printing patient details...")
@@ -68,6 +78,7 @@ generic_test = [GenericTest("FBC"), GenericTest("EUC"), GenericTest("LFT"), Gene
 def recommend_labtest(patient):
     """
     This function recommends or assigns appropriate lab tests based on the patient's age and sex.
+    The recommended tests are added to the list of lab tests of the patient.
     
     Recommendations
     ---------------
@@ -76,6 +87,11 @@ def recommend_labtest(patient):
     - age >= 18: Generic + HemaTest.
     - age >= 18 and female : + CytoTest.
     - age >= 45 and not female : + Biochem Test.
+    
+    Parameter
+    ---------
+    patient : Patient
+    - patient entity containing the patient details
     """
     
     if patient.age <= 15:
@@ -104,7 +120,7 @@ def find_patient_by_id(patient_list, patient_id):
 
     Returns
     -------
-        If id is found, returns the patient details.
+        If patient is found, returns the Patient instance
         If not found, returns NONE. 
     """
     for patient in patient_list:

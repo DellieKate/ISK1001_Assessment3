@@ -144,11 +144,11 @@ def add_patient(patient_list):
             print(f'{new_patient.getDetails()}')
             
         correct_input = True
-                
- #Writes into CSV file   
+                  
 def master_list (patient_list = []):
     """
     Current patient list will be exported to a CSV file and named patient_master_list.csv.
+    The file will be created on the current directory.
     
     Parameters
     ----------
