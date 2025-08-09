@@ -73,7 +73,7 @@ There is currently no process for confirming patient consent prior to data entry
 
 More detail and elaboration of these issues and others recieved via external feedback, along with proposed solutions can be found in our project's internal documentation and read [HERE](README_Files/ETHICS_SECURITY.md).
 
-For our complete record of both given and received feedback, please refer to [feedback_log.md](feedback_log.md).
+For our complete record of both **given and received feedback**, please refer to [feedback_log.md](feedback_log.md).
 
 ## Licenses
 
@@ -96,6 +96,14 @@ Below is a condensed table of third party modules, their licenses, and the versi
 | six             | 1.17.0      | MIT License                                   | Python 2 and 3 compatibility utilities                                                                |
 | sqlparse        | 0.5.3       | BSD License                                   | A non-validating SQL parser.
 
+
+## Employed Ethical & Legal Frameworks
+
+- [ACM Code of Ethics and Professional Conduct](https://www.acm.org/code-of-ethics) — developer ethics.
+- [Department of Health — Privacy Policy (2020)](https://www.health.gov.au/sites/default/files/documents/2021/04/privacy-policy.pdf) — Australian Government privacy guidance.
+- [AHPRA — Managing health records](https://www.ahpra.gov.au/Resources/Managing-health-records.aspx) — clinical record keeping guidance.
+- [AHPRA guidance (document)](https://www.ahpra.gov.au/documents/default.aspx?record=WD23/32727&dbid=AP&chksum=WtfbsggSV39UJyNGjVwXWg%3D%3D) — additional AHPRA reference.
+- [OAIC — Australian Privacy Principles (quick reference)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) — APP summary
 
 ## Acknowledgements
 
