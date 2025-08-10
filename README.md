@@ -71,9 +71,10 @@ Data errors cannot currently be corrected, which may lead to medical or biograph
 #### **4. Lack of Consent Mechanism (APP 3, APP 5)**:
 There is currently no process for confirming patient consent prior to data entry. A prompt for user verification and consent is recommended.
 
-More detail and elaboration of these issues and others recieved via external feedback, along with proposed solutions can be found in our project's internal documentation and read [HERE](README_Files/ETHICS_SECURITY.md).
+Of these vulnerabilities, two of the four issues — Issues 1 and 4 — were selected for inclusion in our legal and ethical reflection pieces. More detail and elaboration on these issues, along with additional concerns raised through external feedback and our proposed solutions, can be found in our project’s internal documentation, available [HERE](README_Files/ETHICS_SECURITY.md).
 
-For our complete record of both **given and received feedback**, please refer to [feedback_log.md](feedback_log.md).
+For a complete record of both feedback we **received** and feedback we **provided**, please refer to [feedback_log.md](feedback_log.md).
+
 
 ## Licenses
 
