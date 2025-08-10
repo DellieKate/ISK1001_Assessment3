@@ -159,7 +159,7 @@ Furthermore, by adding clear disclaimers and privacy statements, we:
 
 - - -
 
-## Issue 4 – Repository Structure, Documentation Clarity, and Code Transparency
+## Issue 4: Repository Structure, Documentation Clarity, and Code Transparency
 
 ### **Overview of Feedback**
 On 2025-08-08, we received an external review from a source person, Paul Augustine, who examined our repository structure, `README.md`, `INSTALLATION.md` (proposed to be renamed `Set_up.md`), and parts of our source code (`clinic.py`). His feedback focused primarily on repository organisation, documentation clarity, and code readability.
@@ -228,7 +228,7 @@ The following action items have been crafted to review and consider for potentia
   - How it handles user input and directs program flow.
 
 
-## References
+## References:
 
 Association for Computing Machinery. (2018). *ACM Code of Ethics and Professional Conduct*. Retrieved 3 August 2025, from https://www.acm.org/code-of-ethics
 
