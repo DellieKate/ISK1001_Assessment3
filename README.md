@@ -2,6 +2,8 @@
 
 ***Find out what clinical lab test you need!***
 
+**Repository Link:** [https://github.com/DellieKate/ISK1001_Assessment3](https://github.com/DellieKate/ISK1001_Assessment3)
+
 [![License: Apache](https://img.shields.io/badge/License-Apache-red)](https://www.apache.org/licenses/LICENSE-2.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 [![License: BSD](https://img.shields.io/badge/License-BSD-%23AB2B28)](https://opensource.org/licenses/BSD-3-Clause)
