@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This document presents an analysis and reflection on recieved feedback items from our project’s development process, focusing on ethical, legal, and security related considerations.
+This document presents an analysis and reflection on received feedback items from our project’s development process, focusing on ethical, legal, and security related considerations.
 
-From the full set of feedback logs recorded in `feedback_log.md`, **four key issues** were chosen for deeper examination. These were selected because they represent meaningdul ethical and security-related challenges identified during the project, either through internal the groups initial internal audit or subsequent external reviews.
+From the full set of feedback logs recorded in `feedback_log.md`, **four key issues** were chosen for deeper examination. These were selected because they represent meaningful ethical and security-related challenges identified during the project, either through the groups' initial internal audit or subsequent external reviews.
 
 For each issue, we:
 - Summarise the feedback received
@@ -162,7 +162,7 @@ Furthermore, by adding clear disclaimers and privacy statements, we:
 ## Issue 4 – Repository Structure, Documentation Clarity, and Code Transparency
 
 ### **Overview of Feedback**
-On 2025-08-08, we received an external review from our class peer Paul Augustine, who examined our repository structure, `README.md`, `INSTALLATION.md` (proposed to be renamed `Set_up.md`), and parts of our source code (`clinic.py`). His feedback focused primarily on repository organisation, documentation clarity, and code readability
+On 2025-08-08, we received an external review from a source person, Paul Augustine, who examined our repository structure, `README.md`, `INSTALLATION.md` (proposed to be renamed `Set_up.md`), and parts of our source code (`clinic.py`). His feedback focused primarily on repository organisation, documentation clarity, and code readability.
 
 **Key points from the feedback:**
 1. **Repository Structure**

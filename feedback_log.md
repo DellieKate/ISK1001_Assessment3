@@ -29,7 +29,7 @@ As this application handles sensitive patient data, we conducted an internal aud
 3. Data Integrity: There is currently no feature to edit or correct a patient's details, which could lead to incorrect medical recommendations if a mistake is made during data entry (violates APP 10).
 4. Lack of Consent Mechanism (APP 3, APP 5): There is currently no process for confirming patient consent prior to data entry. A prompt for user verification and consent is recommended.
 
-To view view our analysis of these considerations with respect to industry standard legal and ethical frameworks, as well as our remediation strategies and action items, please refer to the [ETHICS_SECURITY.md](ETHICS_SECURITY.md).
+To view our analysis of these considerations with respect to industry standard legal and ethical frameworks, as well as our remediation strategies and action items, please refer to the [ETHICS_SECURITY.md](ETHICS_SECURITY.md).
 
 ----
 
